@@ -17,7 +17,7 @@ int main(){
     }
     for(int j=2;j<2+n;j++)
     {
-        if(vec[j]>k&&vec[j]>0)
+        if(vec[j]>=vec[k+2]&&vec[j]>0)
         x++;  
     }
     cout<<x;
