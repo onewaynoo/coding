@@ -3,24 +3,24 @@
 using namespace std;
 
 int main(){
-    int a,b;
-    if(cin>>a){
-    vector<int> vec,result;
-    cin>>b;
-    vec.push_back(a);
-    vec.push_back(b);
-    for(int i=0;i<a;i++)
+    int n,k,x=0;
+    if(cin>>n){
+    vector<int> vec;
+    cin>>k;
+    vec.push_back(n);
+    vec.push_back(k);
+    for(int i=0;i<n;i++)
     {
       int temp;
       cin>>temp;
         vec.push_back(temp);
     }
-    for(int j=2;j<2+a;j++)
+    for(int j=2;j<2+n;j++)
     {
-        if(vec[j]>b&&vec[j]>0)
-        result.push_back(vec[j]);    
+        if(vec[j]>k&&vec[j]>0)
+        x++;  
     }
-    cout<<result.size();
+    cout<<x;
     }
     return 0;
 }
