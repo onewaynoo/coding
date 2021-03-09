@@ -27,7 +27,7 @@ class MyBook : public Book{
             this->price= price;
         }
 
-   virtual void display()
+   void display()
     {
         cout<<"Title: "<<title<<endl;
         cout<<"Author: "<<author<<endl;
