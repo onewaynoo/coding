@@ -9,7 +9,7 @@ int main(){
     {
         ll n,m,x;
      cin>>n>>m>>x;
-     double dn=n, dm=m, dx=x;
+     double dn=n;
      double column1=ceil(x/dn);
      ll row = x%n;
      if(row == 0)
