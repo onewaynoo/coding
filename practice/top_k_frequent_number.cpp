@@ -8,15 +8,14 @@ int main(){
     cout<<"Enter size of array"<<endl;
     cin>>n;
     int arr[n];
-    cout<<"Enter value of k"<<endl;
-    int k;
-    cin>>k;
+    
     cout<<"Enter array:"<<endl;
     fr(0,n)
     cin>>arr[i];
-    //int arr[] = {1,1,1,3,2,2,4};
-    //int k =2;
-   // int n = sizeof(arr)/sizeof(arr[0]);
+    cout<<"Enter value of k"<<endl;
+    int k;
+    cin>>k;
+
     unordered_map<int,int> map;
     //creating map for frequency
     fr(0,n)
@@ -31,6 +30,7 @@ int main(){
     if(minh.size()>k)
     minh.pop();
  }
+ cout<<"Top k frequent numbers are:"<<endl;
  while(minh.size()>0)
  {
      cout<<minh.top().second<<' ';
