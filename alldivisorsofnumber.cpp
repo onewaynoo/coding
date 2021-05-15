@@ -12,11 +12,14 @@ void alldivisors(int n)
     }
     for(;i>=1;i--)
     {
-        
+        if(n%i==0)
+        cout<<n/i<<" ";
     }
 }
 
 int main(){
-    
+    int n;
+    cin>>n;
+    alldivisors(n);
     return 0;
 }
